@@ -44,3 +44,83 @@ function child_lit_evaluation_questions(){
 		endif;
 	}
 
+function child_lit_benefits(){
+	if(get_field('benefits')){
+		return '<div class="benefits"><h2>Benefits</h2>' . get_field('benefits') . '</div>';
+	}
+}
+
+function child_lit_book_list(){
+	$html = '';
+	if( have_rows('book_list') ):
+		$html = "<div class='books-list'><h2>Books</h2><ul>";
+	    // Loop through rows.
+	    while( have_rows('book_list') ) : the_row();
+
+	        // Load sub field value.
+	        $book = get_sub_field('book');
+	        $html .= "<li>{$book}</li>";
+	        // Do something...
+	    // End loop.
+	    endwhile;
+	    return $html . "</ul></div>";
+		// No value.
+		else :
+		    // Do something...
+		endif;
+	}
+
+function child_lit_additions(){
+	if(get_field('additional_information')){
+		return '<div class="info"><h2>Additional Information</h2>' . get_field('additional_information') . '</div>';
+	}
+}
+
+function child_lit_references(){
+	$html = '';
+	if( have_rows('references') ):
+		$html = "<div class='references'><h2>References</h2><ul>";
+	    // Loop through rows.
+	    while( have_rows('references') ) : the_row();
+
+	        // Load sub field value.
+	        $ref = get_sub_field('reference');
+	        $html .= "<li>{$ref}</li>";
+	        // Do something...
+	    // End loop.
+	    endwhile;
+	    return $html . "</ul></div>";
+		// No value.
+		else :
+		    // Do something...
+		endif;
+	}
+
+
+function child_lit_book_resources($id){
+
+	$html = '';
+		if( have_rows('book_resources', $id) ):
+			$html .= '<div class="book-resources"><h2>Resources</h2>';
+		    // Loop through rows.
+		    while( have_rows('book_resources', $id) ) : the_row();
+
+		        // Load sub field value.
+		        $name = get_sub_field('resource_title');
+		        $link = get_sub_field('resource_link');
+		        $image = get_sub_field('resource_image');
+		        $type = get_sub_field('resource_type');
+		        $image_url = $image['sizes']['medium'];
+		        $html .= "<div class='book-resource'><div class='book-cover'><img class='img-fluid cover' src='{$image_url}' ></div><div class='book-icon {$type}'></div><a href='{$link}'>{$name}</a></div>";
+		        // Do something...
+		    // End loop.
+		    endwhile;
+		    return $html . '</div>';
+			// No value.
+			else :
+			    // Do something...
+			endif;
+	}
+
+
+	
