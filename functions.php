@@ -25,6 +25,7 @@ $understrap_includes = array(
 	'/editor.php',                          // Load Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
 	'/custom-post-types.php',               // Load cpts
+	'/acf.php',               // Load acf specific functions
 );
 
 foreach ( $understrap_includes as $file ) {

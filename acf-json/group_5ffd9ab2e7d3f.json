@@ -136,11 +136,32 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
-                },
+                }
+            ]
+        },
+        {
+            "key": "field_5ffdab0d5722e",
+            "label": "References",
+            "name": "references",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Reference",
+            "sub_fields": [
                 {
-                    "key": "field_5ffd9c8e24b23",
-                    "label": "References",
-                    "name": "references",
+                    "key": "field_5ffdab185722f",
+                    "label": "Reference",
+                    "name": "reference",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -155,112 +176,112 @@
                     "toolbar": "full",
                     "media_upload": 1,
                     "delay": 0
-                },
+                }
+            ]
+        },
+        {
+            "key": "field_5ffdab3457230",
+            "label": "Book Resources",
+            "name": "book_resources",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Resource",
+            "sub_fields": [
                 {
-                    "key": "field_5ffd9caf24b24",
-                    "label": "Book Resources",
-                    "name": "book_resources",
-                    "type": "repeater",
+                    "key": "field_5ffdab4257231",
+                    "label": "Resource Title",
+                    "name": "resource_title",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
-                    "collapsed": "",
-                    "min": 0,
-                    "max": 0,
-                    "layout": "row",
-                    "button_label": "Add Book",
-                    "sub_fields": [
-                        {
-                            "key": "field_5ffd9cca24b25",
-                            "label": "Book title",
-                            "name": "book_title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5ffd9cd224b26",
-                            "label": "Resource Link",
-                            "name": "resource_link",
-                            "type": "url",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": ""
-                        },
-                        {
-                            "key": "field_5ffd9cdd24b27",
-                            "label": "Book Image",
-                            "name": "book_image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "medium",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        },
-                        {
-                            "key": "field_5ffd9cf624b28",
-                            "label": "Resource Category",
-                            "name": "resource_category",
-                            "type": "radio",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "interview": "Author Interview",
-                                "read": "Author Read",
-                                "talk": "Book Talk",
-                                "trailer": "Book Trailer"
-                            },
-                            "allow_null": 0,
-                            "other_choice": 0,
-                            "default_value": "",
-                            "layout": "vertical",
-                            "return_format": "value",
-                            "save_other_choice": 0
-                        }
-                    ]
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ffdab4e57232",
+                    "label": "Resource Link",
+                    "name": "resource_link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5ffdab5657233",
+                    "label": "Resource Image",
+                    "name": "resource_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5ffdab6257234",
+                    "label": "Resource Type",
+                    "name": "resource_type",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "read": "Author Read",
+                        "interview": "Author Interview",
+                        "trailer": "Book Trailer",
+                        "talk": "Book Talk"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
                 }
             ]
         }
@@ -270,7 +291,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "chapter"
             }
         ]
     ],
@@ -279,8 +300,23 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
     "active": true,
     "description": "",
-    "modified": 1610456373
+    "modified": 1610460315
 }
