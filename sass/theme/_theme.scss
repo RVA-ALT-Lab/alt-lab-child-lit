@@ -1,0 +1,209 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
+
+/*
+dark blue = #264653 
+lt blue = #457b9d
+red = #e63946
+pale = #e8ecef
+*/
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #264653;
+}
+
+h1 {
+	font-size: 6em;
+	font-weight: 800;
+	text-align: center;
+}
+
+h2 {
+	font-size: 4em;
+}
+
+p {
+	background-color: rgba(255, 255, 255, .85);
+	padding: 20px;
+}
+
+li {
+	font-size: 1em;
+}
+
+.back-button {
+	height: 30px;
+	width: 30px;
+	margin: 0 20px 0 0;
+}
+
+.family-stats{
+	background-color: #e8ecef;
+	height: 100vh;
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.family {
+	margin-top: 30px;
+}
+
+.family-stats h1 {
+	font-size: 3em;
+	font-weight: 400;
+	text-shadow: none;
+	text-align: left;
+	color: #264653;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.family h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+/*.family:nth-of-type(odd){
+	background-color: #efefef;
+}*/
+
+
+
+img.person {
+	border-radius: 50%;
+	margin: 10px auto;
+	height: 150px;
+	width: 150px;
+	object-fit: cover;
+	display: block;
+	border: 3px solid #457b9d;
+}
+
+
+article {
+	overflow: hidden;
+	padding: 50px;
+}
+
+/*EVENT SPECIFIC*/
+article h1 {
+	margin: 20px auto;	
+}
+
+.family-stats h1.event-title, #single-family-wrapper .entry-title {
+	margin-top: 50px;
+}
+
+/*half and half revisions*/
+
+.familty-stats {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.family-stats h3 {
+	margin-top: 25px;
+}
+
+.status-bar {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	margin: 10px 0 5px 0;
+}
+
+/*resources*/
+
+ul#resources {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  position: absolute;
+  bottom: 10px;
+  margin: 10px auto;
+  padding-left: 0;
+}
+
+#resources li {
+	width: calc(100% / 3);
+	text-align: center;
+	display: block;
+	transition: all .3s;
+	border: 2px solid $light;
+}
+
+#resources li img {
+	display: block;
+	margin: 0 auto;
+	width: 60px;
+	height: 60px;
+}
+
+#resources li:hover {
+	border: 2px solid #424242;
+}
+
+/*map template*/
+
+#full-width-map-page-wrapper {
+	background: url(../imgs/big-map.svg) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	height: 100vh;
+}
+
+.map-location {
+	width: 110px;
+}
+
+.map-location img{
+	width: 80px;
+	height: 80px;
+	border: 2px solid $primary;
+	border-radius: 50%;
+	// background-color: rgba(220,220,220,.2);
+	margin: 10px auto;
+	display: block;
+}
+
+.map-location button {
+	border: none;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	transition: .3s all;
+	background-color: none;
+	border: 2px solid $primary;
+}
+
+.map-location button:hover {
+	background-color: $primary;
+	color: #fff;
+}
+
+
+.map-location h2 {
+	font-size: .9em;
+	font-weight: 700;
+	text-align: center;
+	display: block;
+	padding: 5px;
+	background-color: #fff;
+}
+
+/*FOOTER*/
+#wrapper-footer {
+	position: fixed;
+	bottom: 0;
+	display: block;
+	z-index: 9000;
+}
