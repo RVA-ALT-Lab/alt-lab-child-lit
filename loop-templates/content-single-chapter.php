@@ -25,21 +25,21 @@ defined( 'ABSPATH' ) || exit;
 		<?php echo child_lit_intro();?>
 		<?php echo child_lit_main();?>
 		<div class="row">
-			<div class="col-md-4 questions">
+			<div class="col-md-12 questions">
 				<?php echo child_lit_evaluation_questions();?>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-12">
 				<?php echo child_lit_benefits();?>
 			</div>
-			<div class="book-list col-md-4">
+			<div class="book-list col-md-12">
 				<?php echo child_lit_book_list();?>
 			</div>
 		</div>
 		<div class="row">
-			<div class="references col-md-6">
+			<div class="references col-md-12">
 				<?php echo child_lit_additions();?>
 			</div>	
-			<div class="references col-md-6">
+			<div class="references col-md-12">
 				<?php echo child_lit_references();?>
 			</div>	
 		</div>

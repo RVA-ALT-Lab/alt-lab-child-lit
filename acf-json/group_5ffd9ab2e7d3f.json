@@ -303,6 +303,57 @@
                     "save_other_choice": 0
                 }
             ]
+        },
+        {
+            "key": "field_60070e628a92b",
+            "label": "Show Additional License",
+            "name": "show_additional_license",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Yes": "Yes",
+                "No": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "No",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_60070c3dbaec9",
+            "label": "License",
+            "name": "license",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60070e628a92b",
+                        "operator": "==",
+                        "value": "Yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\"[Heading X] is from <a href=\"https:\/\/scholarcommons.usf.edu\/childrens_lit_textbook\/\">The Inside, Outside, and Upside Downs of Children's Literature: From Poets and Pop-ups to Princesses and Porridge<\/a> by Dr. Jenifer Jasinski Schneider, licensed under a <a href=\"https:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/\">Creative Commons Attribution-Noncommercial-No Derivative Works 4.0 License<\/a>. Used with Permission.\"",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
         }
     ],
     "location": [
@@ -337,5 +388,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1610469776
+    "modified": 1611075222
 }

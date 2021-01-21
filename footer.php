@@ -26,7 +26,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
-						
+						<div class="row">
+							<div class="license col-md-6 offset-md-3">
+								"A Guide to Children's Literature" by Lisa Cipolletti, Valerie Robnolt, and Elizabeth Morris is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-Non-Commerical 4.0 License</a>, except where otherwise noted.
+							</div>
+						</div>
 
 					</div><!-- .site-info -->
 
