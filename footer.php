@@ -28,7 +28,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="site-info">
 						<div class="row">
 							<div class="license col-md-6 offset-md-3">
+								<h3 class="label-centered">License</h3>
 								"A Guide to Children's Literature" by Lisa Cipolletti, Valerie Robnolt, and Elizabeth Morris is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-Non-Commerical 4.0 License</a>, except where otherwise noted.
+								<?php 
+								echo child_lit_extra_license();
+								?>
 							</div>
 						</div>
 

@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 function child_lit_intro(){
 	if (get_field('introduction')){
 
-		return '<div class="introduction"><h2>Introduction</h2>' . get_field('introduction') . '</div>';
+		return '<div class="introduction"><h2 class="center-label">Introduction</h2>' . get_field('introduction') . '</div>';
 	}
 }
 
@@ -27,7 +27,7 @@ function child_lit_main(){
 function child_lit_evaluation_questions(){
 	$html = '';
 	if( have_rows('evaluation_questions') ):
-		$html = "<div class='questions'><h2>Evaluation Questions</h2><ul>";
+		$html = "<div class='questions'><h2 class='center-label'>Evaluation Questions</h2><ul>";
 	    // Loop through rows.
 	    while( have_rows('evaluation_questions') ) : the_row();
 
@@ -46,14 +46,14 @@ function child_lit_evaluation_questions(){
 
 function child_lit_benefits(){
 	if(get_field('benefits')){
-		return '<div class="benefits"><h2>Benefits</h2>' . get_field('benefits') . '</div>';
+		return '<div class="benefits"><h2 class="center-label">Benefits</h2>' . get_field('benefits') . '</div>';
 	}
 }
 
 function child_lit_book_list(){
 	$html = '';
 	if( have_rows('book_list') ):
-		$html = "<div class='books-list'><h2>Books</h2><ul>";
+		$html = "<div class='books-list'><h2 class='center-label'>Books</h2><ul>";
 	    // Loop through rows.
 	    while( have_rows('book_list') ) : the_row();
 
@@ -72,14 +72,14 @@ function child_lit_book_list(){
 
 function child_lit_additions(){
 	if(get_field('additional_information')){
-		return '<div class="info"><h2>Additional Information</h2>' . get_field('additional_information') . '</div>';
+		return '<div class="info"><h2 class="center-label">Additional Information</h2>' . get_field('additional_information') . '</div>';
 	}
 }
 
 function child_lit_references(){
 	$html = '';
 	if( have_rows('references') ):
-		$html = "<div class='references'><h2>References</h2><ul>";
+		$html = "<div class='references'><h2 class='center-label'>References</h2><ul>";
 	    // Loop through rows.
 	    while( have_rows('references') ) : the_row();
 
@@ -101,7 +101,7 @@ function child_lit_book_resources($id){
 
 	$html = '';
 		if( have_rows('book_resources', $id) ):
-			$html .= '<div class="book-resources"><h2>Resources</h2>';
+			$html .= '<div class="book-resources"><h2 class="center-label">Resources</h2>';
 		    // Loop through rows.
 		    while( have_rows('book_resources', $id) ) : the_row();
 
@@ -123,4 +123,13 @@ function child_lit_book_resources($id){
 	}
 
 
-	
+function child_lit_extra_license(){
+	global $post;
+	$post_id = $post->ID;
+	$license = get_field('license');	
+	echo $license;
+}
+
+
+
+
