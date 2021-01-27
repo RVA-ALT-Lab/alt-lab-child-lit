@@ -290,10 +290,10 @@
                         "id": ""
                     },
                     "choices": {
-                        "read": "Author Read",
-                        "interview": "Author Interview",
-                        "trailer": "Book Trailer",
-                        "talk": "Book Talk"
+                        "Author Read": "Author Read",
+                        "Author Interview": "Author Interview",
+                        "Book Trailer": "Book Trailer",
+                        "Book Talk": "Book Talk"
                     },
                     "allow_null": 0,
                     "other_choice": 0,
@@ -364,5 +364,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1611682634
+    "modified": 1611751122
 }
