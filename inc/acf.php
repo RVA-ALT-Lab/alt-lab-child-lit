@@ -111,7 +111,7 @@ function child_lit_book_resources($id){
 		        $image = get_sub_field('resource_image');
 		        $type = get_sub_field('resource_type');
 		        $image_url = $image['sizes']['medium'];
-		        $html .= "<div class='book-resource'><div class='book-cover'><img class='img-fluid cover' src='{$image_url}' ></div><div class='book-icon {$type}'></div><a href='{$link}'>{$name}</a></div>";
+		        $html .= "<div class='book-resource'><a href='{$link}'><div class='book-cover'><img class='img-fluid cover' src='{$image_url}' ></div><div class='book-icon {$type}'></div>{$name}</a></div>";
 		        // Do something...
 		    // End loop.
 		    endwhile;
