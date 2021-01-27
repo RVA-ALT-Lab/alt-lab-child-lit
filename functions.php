@@ -33,3 +33,23 @@ foreach ( $understrap_includes as $file ) {
 }
 
 
+function add_chapter_to_dropdown( $pages ){
+    $args = array(
+        'post_type' => 'chapter'
+    );
+    $items = get_posts($args);
+    $pages = array_merge($pages, $items);
+
+    return $pages;
+}
+add_filter( 'get_pages', 'add_chapter_to_dropdown' );
+
+//functional in that the chapters are now an option but URL piece below was failing for me
+//from https://wordpress.stackexchange.com/a/126271/82797
+
+// function enable_front_page_chapter( $query ){
+// 	var_dump($query->query_vars)['post_type'];
+//     // if('' == $query->query_vars['post_type'] && 0 != $query->query_vars['page_id'])
+//     //     $query->query_vars['post_type'] = array( 'page', 'chapter' );
+// }
+// add_action( 'pre_get_posts', 'enable_front_page_chapter' );
