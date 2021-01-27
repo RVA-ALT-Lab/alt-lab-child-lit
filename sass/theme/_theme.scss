@@ -13,6 +13,24 @@ body {
 	color: #264653;
 }
 
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+	overflow-x: hidden;
+	 overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+}
+
 h1, h2, h3, h4 {
 	margin: 40px 0 10px 0;
 }
@@ -39,6 +57,15 @@ li {
 li p {
 	margin:0;
 	padding: 0;
+}
+
+#wrapper-navbar {
+	background-color: $primary;
+}
+
+#main-nav {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 #wrapper-footer {
