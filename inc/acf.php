@@ -20,7 +20,7 @@ function child_lit_intro(){
 function child_lit_main(){
 	if (get_field('main_content')){
 
-		return '<div class="main-content">' . get_field('main_content') . '</div>';
+		return '<div class="main-content"><h2 class="center-label">Main Content</h2>' . get_field('main_content') . '</div>';
 	}
 }
 
