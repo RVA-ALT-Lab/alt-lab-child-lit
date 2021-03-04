@@ -119,6 +119,11 @@ li p {
 	border: 3px solid $primary;
 }
 
+.book-resource-title {
+	font-size: 1.5em;
+	font-weight: 800;
+}
+
 .cover {
 	width: 100%;
 	object-fit: cover;
@@ -126,24 +131,40 @@ li p {
 
 .book-icon {
 	width: 100%;
-	height: 20px;
-	
+	height: 70px;
 	font-weight: 400;
 	font-size: .6em;
+	padding-top: 2%;
 }
 
 .talk {
+	// background-image: url(../imgs/lit_talk.png);
 	background-image: url(../imgs/talk.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 15px;
 }
 
 .interview {
+	// background-image: url(../imgs/lit_interview.png);
 	background-image: url(../imgs/interview.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 15px;
 }
 
 .trailer {
+	// background-image: url(../imgs/lit_trailer.png);
 	background-image: url(../imgs/trailer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 15px;
 }
 
 .read {
+	// background-image: url(../imgs/lit_read.png);
 	background-image: url(../imgs/read.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 15px;
 }
